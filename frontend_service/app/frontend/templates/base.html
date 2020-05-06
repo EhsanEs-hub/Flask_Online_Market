@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title> {% block title %} {% endblock %} </title>
+
+    {% block styles %}
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- latest compiled and minfied css -->
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.js">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+
+    {% endblock %}
+
+</head>
+
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>

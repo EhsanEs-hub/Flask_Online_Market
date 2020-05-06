@@ -1,0 +1,13 @@
+{% for error_message in get_flashed_messages(category_filter = ["error"]) %}
+< div class="alert alert_danger alert_dismissible">{{error_message}}</div>
+{% endblock %}
+
+{% for success_message in get_flashed_messages(category_filter = ["success"]) %}
+< div class="alert alert_danger alert_dismissible">{{success_message}}</div>
+{% endblock %}
+
+{% for info_message in get_flashed_messages(category_filter = ["info"]) %}
+< div class="alert alert_danger alert_dismissible">{{info_message}}</div>
+{% endblock %}
+
+
